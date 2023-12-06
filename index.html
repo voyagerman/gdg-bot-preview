@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chat Bot | Preview</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css"
+    />
+    <style>
+      df-messenger {
+        z-index: 999;
+        position: fixed;
+        bottom: 16px;
+        right: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="margin-left: 16px">
+      <h1>Chat Bot for GDG Dakshineswar</h1>
+      <p>
+        This is a chat bot for GDG Dakshineswar. Click on the chat icon on the
+        bottom right corner to start chatting.
+      </p>
+    </div>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <df-messenger
+      project-id="dialogflow-demo-406509"
+      agent-id="9676bcca-c96b-4a4f-a4ae-56ae314b71e8"
+      language-code="en"
+    >
+      <df-messenger-chat-bubble chat-title="GDG Dakshineswar">
+      </df-messenger-chat-bubble>
+    </df-messenger>
+  </body>
+</html>
